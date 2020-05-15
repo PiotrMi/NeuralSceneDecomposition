@@ -219,4 +219,9 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
         ax.set_ylim(mid_y - max_range, mid_y + max_range)
         ax.set_zlim(mid_z - max_range, mid_z + max_range)
 
+
+    #print lines
+    for bone in enumerate(bones):
+        print(bone)
+
     return plot_handles
