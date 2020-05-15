@@ -165,8 +165,11 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
                                                            bones=utils_skel.bones_h36m, linewidth=5,
                                                            plot_handles=None)  # , colormap='Greys')
             ax_pred_skel2.invert_zaxis()
+            plt.savefig("foo.png")
             ax_pred_skel2.grid(False)
+            plt.savefig("foo.png")
             ax_pred_skel2.set_axis_off()
+            plt.savefig("foo.png")
             ax_pred_skel2.set_title("(right)", size=title_font_size)
             print(ax_pred_skel2)
             print(handle_pred_skel2)
