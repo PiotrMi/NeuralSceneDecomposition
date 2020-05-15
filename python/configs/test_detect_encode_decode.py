@@ -170,6 +170,7 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
             ax_pred_skel2.set_title("(right)", size=title_font_size)
             print(ax_pred_skel2)
             print(handle_pred_skel2)
+            plt.savefig("foo.png")
 
             # gt skeleton 1
             ax_gt_skel2 = fig.add_subplot(111, projection='3d')
