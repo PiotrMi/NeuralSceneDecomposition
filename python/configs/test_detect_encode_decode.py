@@ -171,6 +171,7 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
             print(ax_pred_skel2)
             print(handle_pred_skel2)
             plt.savefig("foo.png")
+            ax_pred_skel2.savefig("iodwja.png")
 
             # gt skeleton 1
             ax_gt_skel2 = fig.add_subplot(111, projection='3d')
