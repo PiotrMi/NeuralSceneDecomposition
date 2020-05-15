@@ -279,6 +279,7 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
                 x_scale * width, y_scale * height)
         return rects
 
+#test
 
 if __name__ == "__main__":
     config_dict_module = utils_io.loadModule("configs/config_test_detect_encode_decode.py")
