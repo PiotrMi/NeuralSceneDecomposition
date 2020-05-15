@@ -154,6 +154,7 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
             ax_pred_skel1.grid(False)
             ax_pred_skel1.set_axis_off()
             ax_pred_skel1.set_title("Pred. (left)", size=title_font_size)
+            print(ax_pred_skel1)
 
             # output skeleton 2
             ax_pred_skel2 = fig.add_subplot(111, projection='3d')
@@ -165,6 +166,7 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
             ax_pred_skel2.grid(False)
             ax_pred_skel2.set_axis_off()
             ax_pred_skel2.set_title("(right)", size=title_font_size)
+            print(ax_pred_skel2)
 
             # gt skeleton 1
             ax_gt_skel2 = fig.add_subplot(111, projection='3d')
