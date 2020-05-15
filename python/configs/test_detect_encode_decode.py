@@ -127,6 +127,7 @@ class IgniteTestNVS(train_detect_encode_decode.IgniteTrainNVS):
             img_out = tensor_to_img(output_dict[key][image_index])
             handle_im_out = plt.imshow(img_out, animated=True)
             plt.savefig('foo.png')
+            print("save fig")
             ax_out_img.set_title("Output img", size=title_font_size)
 
             # output seg
