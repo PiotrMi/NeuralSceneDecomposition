@@ -189,6 +189,8 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
         np.array(pose_3d[1, :]))
     XYZ = np.vstack([X, Y, Z])
 
+    print(pose_3d)
+
     if not plot_handles is None:
         for i, bone in enumerate(bones):
             plot_handles['lines'][i].set_data(XYZ[0:2, bone])
