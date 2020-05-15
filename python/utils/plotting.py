@@ -183,6 +183,7 @@ def plot_3Dpose(ax, pose_3d, bones, radius=10, colormap='gist_rainbow', color_or
 
 def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
                        color_order=[0, 5, 9, 15, 2, 10, 12, 4, 14, 13, 11, 3, 7, 8, 6, 1], plot_handles=None):
+    print(pose_3d)
     pose_3d = np.reshape(pose_3d, (3, -1))
 
     X, Y, Z = np.squeeze(np.array(pose_3d[0, :])), np.squeeze(np.array(pose_3d[2, :])), np.squeeze(
