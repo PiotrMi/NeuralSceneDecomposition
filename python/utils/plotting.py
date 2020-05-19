@@ -225,7 +225,9 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
             plot_handles['lines'].extend(line_handle)  # for whatever reason plot already returns a list
             #print(line_handle)
 
+        print("save list a")
         np.save("bonesA.npy", bonelista)
+        print("save list b")
         np.save("bonesB.npy", bonelistb)
 
         # maintain aspect ratio
