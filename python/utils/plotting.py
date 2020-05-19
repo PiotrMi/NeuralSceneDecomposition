@@ -212,7 +212,7 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
             colorIndex = (i * cmap.N / float(maximum))
             color = cmap(int(colorIndex))
             print("BONE TIME")
-            print(XYZ[0, bone] + " " + XYZ[1, bone] + " " + XYZ[2, bone])
+            print(XYZ[0, bone] , " " , XYZ[1, bone] , " " , XYZ[2, bone])
             line_handle = ax.plot(XYZ[0, bone], XYZ[1, bone], XYZ[2, bone], color=color, linewidth=linewidth, alpha=0.5,
                                   solid_capstyle='round')
             plot_handles['lines'].extend(line_handle)  # for whatever reason plot already returns a list
