@@ -184,7 +184,7 @@ def plot_3Dpose(ax, pose_3d, bones, radius=10, colormap='gist_rainbow', color_or
 def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
                        color_order=[0, 5, 9, 15, 2, 10, 12, 4, 14, 13, 11, 3, 7, 8, 6, 1], plot_handles=None):
     print("pose vor dem reshapen -----------------------------------")
-    print(pose_3d)
+    #print(pose_3d)
     pose_3d = np.reshape(pose_3d, (3, -1))
     #print(pose_3d)
     print("pose NACH dem reshapen ---------------------------------")
@@ -193,7 +193,7 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
         np.array(pose_3d[1, :]))
     XYZ = np.vstack([X, Y, Z])
 
-    print(pose_3d)
+    #print(pose_3d)
 
     if not plot_handles is None:
         for i, bone in enumerate(bones):
@@ -231,6 +231,7 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
 
     #print lines
     for bone in enumerate(bones):
-        print(bone)
+        #print(bone)
+        print("")
 
     return plot_handles
