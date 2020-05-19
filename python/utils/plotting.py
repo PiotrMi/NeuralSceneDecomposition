@@ -225,6 +225,9 @@ def plot_3Dpose_simple(ax, pose_3d, bones, linewidth=1, colormap='gist_rainbow',
             plot_handles['lines'].extend(line_handle)  # for whatever reason plot already returns a list
             #print(line_handle)
 
+        np.save("bonesA.npy", bonelista)
+        np.save("bonesB.npy", bonelistb)
+
         # maintain aspect ratio
         max_range = np.array([X.max() - X.min(), Y.max() - Y.min(), Z.max() - Z.min()]).max() / 2.0
 
